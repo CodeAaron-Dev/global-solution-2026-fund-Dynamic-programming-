@@ -3,9 +3,7 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import cm
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak, KeepTogether
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfbase import pdfmetrics
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,11 +56,11 @@ story.append(p('Disciplina: Estruturas de Dados e Algoritmos - FIAP - Dynamic Pr
 story.append(p('1. Identificacao do grupo e contextualizacao', 'H1GS'))
 integrantes = [
     ['RM', 'Nome'],
-    ['565398', 'Cesar Aaron Herrera'],
-    ['562100', 'Kaue Soares Madarazzo'],
-    ['566290', 'Nicolas Mendes dos Santos'],
-    ['561993', 'Rafael Seiji Aoke Arakaki'],
-    ['563624', 'Rafael Yuji Nakaya'],
+    ['RM 565398', 'Cesar Aaron Herrera'],
+    ['RM 562100', 'Kauê Soares Madarazzo'],
+    ['RM 566290', 'Nicolas Mendes dos Santos'],
+    ['RM 561993', 'Rafael Seiji Aoke Arakaki'],
+    ['RM 563624', 'Rafael Yuji Nakaya'],
 ]
 t = Table(integrantes, colWidths=[2.4*cm, 11.8*cm])
 t.setStyle(TableStyle([
