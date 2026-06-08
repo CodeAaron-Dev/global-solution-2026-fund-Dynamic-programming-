@@ -1,0 +1,1740 @@
+{
+  "hipoteses": [
+    "Pesos representam tempo estimado de deslocamento em horas.",
+    "Risco varia de 0 a 1.",
+    "Forca Bruta roda somente ate N=12.",
+    "Prim foi escolhido por gerar MST eficiente para cobertura minima de municipios."
+  ],
+  "resultados": [
+    {
+      "n": 5,
+      "brute_force": {
+        "status": "otimo_encontrado",
+        "custo_total": 9.826,
+        "arestas": [
+          [
+            1000000,
+            1000001,
+            1.975
+          ],
+          [
+            1000000,
+            1000002,
+            1.56
+          ],
+          [
+            1000002,
+            1000003,
+            1.311
+          ],
+          [
+            1000003,
+            1000004,
+            4.98
+          ]
+        ],
+        "chamadas_recursivas": 29,
+        "solucoes_avaliadas": 5,
+        "tempo_ms": 0.1984,
+        "memoria_mb": 0.002045
+      },
+      "greedy_prim": {
+        "custo_total": 9.826,
+        "arestas": [
+          [
+            1000000,
+            1000002,
+            1.56
+          ],
+          [
+            1000002,
+            1000003,
+            1.311
+          ],
+          [
+            1000000,
+            1000001,
+            1.975
+          ],
+          [
+            1000003,
+            1000004,
+            4.98
+          ]
+        ],
+        "operacoes": 10,
+        "passos": [
+          "Escolhida aresta (1000000, 1000002) com peso 1.560, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000002, 1000003) com peso 1.311, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000000, 1000001) com peso 1.975, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000003, 1000004) com peso 4.980, menor custo disponivel na fronteira."
+        ],
+        "vertices_visitados": [
+          1000000,
+          1000001,
+          1000002,
+          1000003,
+          1000004
+        ],
+        "tempo_ms": 0.2374,
+        "memoria_mb": 0.001429
+      },
+      "gap_percentual": 0.0
+    },
+    {
+      "n": 8,
+      "brute_force": {
+        "status": "otimo_encontrado",
+        "custo_total": 15.297,
+        "arestas": [
+          [
+            1000000,
+            1000001,
+            1.495
+          ],
+          [
+            1000001,
+            1000002,
+            2.322
+          ],
+          [
+            1000002,
+            1000003,
+            0.981
+          ],
+          [
+            1000003,
+            1000007,
+            4.33
+          ],
+          [
+            1000004,
+            1000005,
+            0.45
+          ],
+          [
+            1000005,
+            1000006,
+            4.155
+          ],
+          [
+            1000006,
+            1000007,
+            1.564
+          ]
+        ],
+        "chamadas_recursivas": 177,
+        "solucoes_avaliadas": 10,
+        "tempo_ms": 0.2614,
+        "memoria_mb": 0.002792
+      },
+      "greedy_prim": {
+        "custo_total": 15.297,
+        "arestas": [
+          [
+            1000000,
+            1000001,
+            1.495
+          ],
+          [
+            1000001,
+            1000002,
+            2.322
+          ],
+          [
+            1000002,
+            1000003,
+            0.981
+          ],
+          [
+            1000003,
+            1000007,
+            4.33
+          ],
+          [
+            1000007,
+            1000006,
+            1.564
+          ],
+          [
+            1000006,
+            1000005,
+            4.155
+          ],
+          [
+            1000005,
+            1000004,
+            0.45
+          ]
+        ],
+        "operacoes": 16,
+        "passos": [
+          "Escolhida aresta (1000000, 1000001) com peso 1.495, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000001, 1000002) com peso 2.322, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000002, 1000003) com peso 0.981, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000003, 1000007) com peso 4.330, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000007, 1000006) com peso 1.564, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000006, 1000005) com peso 4.155, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000005, 1000004) com peso 0.450, menor custo disponivel na fronteira."
+        ],
+        "vertices_visitados": [
+          1000000,
+          1000001,
+          1000002,
+          1000003,
+          1000004,
+          1000005,
+          1000006,
+          1000007
+        ],
+        "tempo_ms": 0.1763,
+        "memoria_mb": 0.001889
+      },
+      "gap_percentual": 0.0
+    },
+    {
+      "n": 10,
+      "brute_force": {
+        "status": "otimo_encontrado",
+        "custo_total": 18.865,
+        "arestas": [
+          [
+            1000000,
+            1000001,
+            0.255
+          ],
+          [
+            1000001,
+            1000002,
+            1.909
+          ],
+          [
+            1000001,
+            1000003,
+            0.86
+          ],
+          [
+            1000003,
+            1000004,
+            1.553
+          ],
+          [
+            1000004,
+            1000005,
+            3.945
+          ],
+          [
+            1000005,
+            1000006,
+            1.909
+          ],
+          [
+            1000006,
+            1000007,
+            2.759
+          ],
+          [
+            1000007,
+            1000008,
+            1.89
+          ],
+          [
+            1000008,
+            1000009,
+            3.785
+          ]
+        ],
+        "chamadas_recursivas": 1103,
+        "solucoes_avaliadas": 97,
+        "tempo_ms": 2.5419,
+        "memoria_mb": 0.002899
+      },
+      "greedy_prim": {
+        "custo_total": 18.865,
+        "arestas": [
+          [
+            1000000,
+            1000001,
+            0.255
+          ],
+          [
+            1000001,
+            1000003,
+            0.86
+          ],
+          [
+            1000003,
+            1000004,
+            1.553
+          ],
+          [
+            1000001,
+            1000002,
+            1.909
+          ],
+          [
+            1000004,
+            1000005,
+            3.945
+          ],
+          [
+            1000005,
+            1000006,
+            1.909
+          ],
+          [
+            1000006,
+            1000007,
+            2.759
+          ],
+          [
+            1000007,
+            1000008,
+            1.89
+          ],
+          [
+            1000008,
+            1000009,
+            3.785
+          ]
+        ],
+        "operacoes": 22,
+        "passos": [
+          "Escolhida aresta (1000000, 1000001) com peso 0.255, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000001, 1000003) com peso 0.860, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000003, 1000004) com peso 1.553, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000001, 1000002) com peso 1.909, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000004, 1000005) com peso 3.945, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000005, 1000006) com peso 1.909, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000006, 1000007) com peso 2.759, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000007, 1000008) com peso 1.890, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000008, 1000009) com peso 3.785, menor custo disponivel na fronteira."
+        ],
+        "vertices_visitados": [
+          1000000,
+          1000001,
+          1000002,
+          1000003,
+          1000004,
+          1000005,
+          1000006,
+          1000007,
+          1000008,
+          1000009
+        ],
+        "tempo_ms": 0.1364,
+        "memoria_mb": 0.002267
+      },
+      "gap_percentual": 0.0
+    },
+    {
+      "n": 12,
+      "brute_force": {
+        "status": "otimo_encontrado",
+        "custo_total": 26.708,
+        "arestas": [
+          [
+            1000000,
+            1000006,
+            1.4
+          ],
+          [
+            1000001,
+            1000002,
+            0.517
+          ],
+          [
+            1000002,
+            1000003,
+            3.583
+          ],
+          [
+            1000003,
+            1000004,
+            3.857
+          ],
+          [
+            1000004,
+            1000005,
+            3.829
+          ],
+          [
+            1000005,
+            1000006,
+            2.188
+          ],
+          [
+            1000005,
+            1000008,
+            2.979
+          ],
+          [
+            1000007,
+            1000008,
+            0.399
+          ],
+          [
+            1000008,
+            1000009,
+            2.01
+          ],
+          [
+            1000009,
+            1000010,
+            2.898
+          ],
+          [
+            1000010,
+            1000011,
+            3.048
+          ]
+        ],
+        "chamadas_recursivas": 5917,
+        "solucoes_avaliadas": 395,
+        "tempo_ms": 10.9105,
+        "memoria_mb": 0.003616
+      },
+      "greedy_prim": {
+        "custo_total": 26.708,
+        "arestas": [
+          [
+            1000000,
+            1000006,
+            1.4
+          ],
+          [
+            1000006,
+            1000005,
+            2.188
+          ],
+          [
+            1000005,
+            1000008,
+            2.979
+          ],
+          [
+            1000008,
+            1000007,
+            0.399
+          ],
+          [
+            1000008,
+            1000009,
+            2.01
+          ],
+          [
+            1000009,
+            1000010,
+            2.898
+          ],
+          [
+            1000010,
+            1000011,
+            3.048
+          ],
+          [
+            1000005,
+            1000004,
+            3.829
+          ],
+          [
+            1000004,
+            1000003,
+            3.857
+          ],
+          [
+            1000003,
+            1000002,
+            3.583
+          ],
+          [
+            1000002,
+            1000001,
+            0.517
+          ]
+        ],
+        "operacoes": 28,
+        "passos": [
+          "Escolhida aresta (1000000, 1000006) com peso 1.400, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000006, 1000005) com peso 2.188, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000005, 1000008) com peso 2.979, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000008, 1000007) com peso 0.399, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000008, 1000009) com peso 2.010, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000009, 1000010) com peso 2.898, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000010, 1000011) com peso 3.048, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000005, 1000004) com peso 3.829, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000004, 1000003) com peso 3.857, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000003, 1000002) com peso 3.583, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000002, 1000001) com peso 0.517, menor custo disponivel na fronteira."
+        ],
+        "vertices_visitados": [
+          1000000,
+          1000001,
+          1000002,
+          1000003,
+          1000004,
+          1000005,
+          1000006,
+          1000007,
+          1000008,
+          1000009,
+          1000010,
+          1000011
+        ],
+        "tempo_ms": 0.2915,
+        "memoria_mb": 0.002543
+      },
+      "gap_percentual": 0.0
+    },
+    {
+      "n": 20,
+      "brute_force": {
+        "status": "inviavel",
+        "motivo": "Crescimento combinatorio torna a enumeracao completa impraticavel para N > 12.",
+        "custo_total": null,
+        "arestas": [],
+        "chamadas_recursivas": null,
+        "solucoes_avaliadas": null,
+        "tempo_ms": null,
+        "memoria_mb": null
+      },
+      "greedy_prim": {
+        "custo_total": 42.152,
+        "arestas": [
+          [
+            1000000,
+            1000015,
+            0.621
+          ],
+          [
+            1000015,
+            1000016,
+            0.521
+          ],
+          [
+            1000015,
+            1000014,
+            1.233
+          ],
+          [
+            1000000,
+            1000017,
+            1.5
+          ],
+          [
+            1000000,
+            1000001,
+            4.584
+          ],
+          [
+            1000001,
+            1000002,
+            2.149
+          ],
+          [
+            1000002,
+            1000003,
+            3.122
+          ],
+          [
+            1000003,
+            1000004,
+            0.245
+          ],
+          [
+            1000004,
+            1000005,
+            1.965
+          ],
+          [
+            1000005,
+            1000006,
+            2.152
+          ],
+          [
+            1000006,
+            1000007,
+            0.276
+          ],
+          [
+            1000007,
+            1000008,
+            3.72
+          ],
+          [
+            1000008,
+            1000010,
+            1.081
+          ],
+          [
+            1000010,
+            1000009,
+            2.751
+          ],
+          [
+            1000001,
+            1000011,
+            4.142
+          ],
+          [
+            1000011,
+            1000012,
+            1.154
+          ],
+          [
+            1000012,
+            1000013,
+            3.384
+          ],
+          [
+            1000017,
+            1000018,
+            4.665
+          ],
+          [
+            1000018,
+            1000019,
+            2.887
+          ]
+        ],
+        "operacoes": 47,
+        "passos": [
+          "Escolhida aresta (1000000, 1000015) com peso 0.621, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000015, 1000016) com peso 0.521, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000015, 1000014) com peso 1.233, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000000, 1000017) com peso 1.500, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000000, 1000001) com peso 4.584, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000001, 1000002) com peso 2.149, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000002, 1000003) com peso 3.122, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000003, 1000004) com peso 0.245, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000004, 1000005) com peso 1.965, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000005, 1000006) com peso 2.152, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000006, 1000007) com peso 0.276, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000007, 1000008) com peso 3.720, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000008, 1000010) com peso 1.081, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000010, 1000009) com peso 2.751, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000001, 1000011) com peso 4.142, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000011, 1000012) com peso 1.154, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000012, 1000013) com peso 3.384, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000017, 1000018) com peso 4.665, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000018, 1000019) com peso 2.887, menor custo disponivel na fronteira."
+        ],
+        "vertices_visitados": [
+          1000000,
+          1000001,
+          1000002,
+          1000003,
+          1000004,
+          1000005,
+          1000006,
+          1000007,
+          1000008,
+          1000009,
+          1000010,
+          1000011,
+          1000012,
+          1000013,
+          1000014,
+          1000015,
+          1000016,
+          1000017,
+          1000018,
+          1000019
+        ],
+        "tempo_ms": 0.4423,
+        "memoria_mb": 0.005212
+      },
+      "gap_percentual": null
+    },
+    {
+      "n": 50,
+      "brute_force": {
+        "status": "inviavel",
+        "motivo": "Crescimento combinatorio torna a enumeracao completa impraticavel para N > 12.",
+        "custo_total": null,
+        "arestas": [],
+        "chamadas_recursivas": null,
+        "solucoes_avaliadas": null,
+        "tempo_ms": null,
+        "memoria_mb": null
+      },
+      "greedy_prim": {
+        "custo_total": 110.1,
+        "arestas": [
+          [
+            1000000,
+            1000047,
+            1.461
+          ],
+          [
+            1000047,
+            1000048,
+            2.132
+          ],
+          [
+            1000000,
+            1000001,
+            2.613
+          ],
+          [
+            1000001,
+            1000002,
+            0.621
+          ],
+          [
+            1000047,
+            1000046,
+            2.957
+          ],
+          [
+            1000046,
+            1000045,
+            0.286
+          ],
+          [
+            1000045,
+            1000044,
+            2.068
+          ],
+          [
+            1000046,
+            1000035,
+            2.335
+          ],
+          [
+            1000035,
+            1000034,
+            1.47
+          ],
+          [
+            1000045,
+            1000006,
+            2.372
+          ],
+          [
+            1000006,
+            1000007,
+            2.302
+          ],
+          [
+            1000044,
+            1000040,
+            2.469
+          ],
+          [
+            1000040,
+            1000039,
+            2.467
+          ],
+          [
+            1000046,
+            1000025,
+            2.555
+          ],
+          [
+            1000025,
+            1000024,
+            0.267
+          ],
+          [
+            1000025,
+            1000026,
+            2.371
+          ],
+          [
+            1000026,
+            1000032,
+            1.905
+          ],
+          [
+            1000032,
+            1000017,
+            0.2
+          ],
+          [
+            1000017,
+            1000018,
+            1.092
+          ],
+          [
+            1000018,
+            1000019,
+            0.96
+          ],
+          [
+            1000017,
+            1000021,
+            1.24
+          ],
+          [
+            1000021,
+            1000022,
+            0.604
+          ],
+          [
+            1000021,
+            1000020,
+            1.156
+          ],
+          [
+            1000017,
+            1000016,
+            1.34
+          ],
+          [
+            1000020,
+            1000004,
+            1.36
+          ],
+          [
+            1000004,
+            1000003,
+            1.29
+          ],
+          [
+            1000026,
+            1000027,
+            2.369
+          ],
+          [
+            1000016,
+            1000015,
+            2.548
+          ],
+          [
+            1000027,
+            1000028,
+            2.554
+          ],
+          [
+            1000015,
+            1000014,
+            2.662
+          ],
+          [
+            1000040,
+            1000041,
+            2.973
+          ],
+          [
+            1000039,
+            1000038,
+            3.302
+          ],
+          [
+            1000038,
+            1000037,
+            1.988
+          ],
+          [
+            1000037,
+            1000036,
+            1.167
+          ],
+          [
+            1000037,
+            1000008,
+            1.758
+          ],
+          [
+            1000008,
+            1000009,
+            3.04
+          ],
+          [
+            1000009,
+            1000010,
+            2.731
+          ],
+          [
+            1000010,
+            1000011,
+            0.558
+          ],
+          [
+            1000011,
+            1000012,
+            2.365
+          ],
+          [
+            1000028,
+            1000029,
+            3.394
+          ],
+          [
+            1000029,
+            1000043,
+            3.125
+          ],
+          [
+            1000029,
+            1000030,
+            3.427
+          ],
+          [
+            1000006,
+            1000005,
+            3.526
+          ],
+          [
+            1000043,
+            1000042,
+            3.726
+          ],
+          [
+            1000048,
+            1000049,
+            3.857
+          ],
+          [
+            1000024,
+            1000023,
+            4.096
+          ],
+          [
+            1000030,
+            1000031,
+            4.104
+          ],
+          [
+            1000034,
+            1000033,
+            4.36
+          ],
+          [
+            1000012,
+            1000013,
+            4.577
+          ]
+        ],
+        "operacoes": 124,
+        "passos": [
+          "Escolhida aresta (1000000, 1000047) com peso 1.461, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000047, 1000048) com peso 2.132, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000000, 1000001) com peso 2.613, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000001, 1000002) com peso 0.621, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000047, 1000046) com peso 2.957, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000046, 1000045) com peso 0.286, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000045, 1000044) com peso 2.068, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000046, 1000035) com peso 2.335, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000035, 1000034) com peso 1.470, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000045, 1000006) com peso 2.372, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000006, 1000007) com peso 2.302, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000044, 1000040) com peso 2.469, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000040, 1000039) com peso 2.467, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000046, 1000025) com peso 2.555, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000025, 1000024) com peso 0.267, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000025, 1000026) com peso 2.371, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000026, 1000032) com peso 1.905, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000032, 1000017) com peso 0.200, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000017, 1000018) com peso 1.092, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000018, 1000019) com peso 0.960, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000017, 1000021) com peso 1.240, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000021, 1000022) com peso 0.604, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000021, 1000020) com peso 1.156, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000017, 1000016) com peso 1.340, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000020, 1000004) com peso 1.360, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000004, 1000003) com peso 1.290, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000026, 1000027) com peso 2.369, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000016, 1000015) com peso 2.548, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000027, 1000028) com peso 2.554, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000015, 1000014) com peso 2.662, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000040, 1000041) com peso 2.973, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000039, 1000038) com peso 3.302, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000038, 1000037) com peso 1.988, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000037, 1000036) com peso 1.167, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000037, 1000008) com peso 1.758, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000008, 1000009) com peso 3.040, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000009, 1000010) com peso 2.731, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000010, 1000011) com peso 0.558, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000011, 1000012) com peso 2.365, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000028, 1000029) com peso 3.394, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000029, 1000043) com peso 3.125, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000029, 1000030) com peso 3.427, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000006, 1000005) com peso 3.526, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000043, 1000042) com peso 3.726, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000048, 1000049) com peso 3.857, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000024, 1000023) com peso 4.096, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000030, 1000031) com peso 4.104, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000034, 1000033) com peso 4.360, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000012, 1000013) com peso 4.577, menor custo disponivel na fronteira."
+        ],
+        "vertices_visitados": [
+          1000000,
+          1000001,
+          1000002,
+          1000003,
+          1000004,
+          1000005,
+          1000006,
+          1000007,
+          1000008,
+          1000009,
+          1000010,
+          1000011,
+          1000012,
+          1000013,
+          1000014,
+          1000015,
+          1000016,
+          1000017,
+          1000018,
+          1000019,
+          1000020,
+          1000021,
+          1000022,
+          1000023,
+          1000024,
+          1000025,
+          1000026,
+          1000027,
+          1000028,
+          1000029,
+          1000030,
+          1000031,
+          1000032,
+          1000033,
+          1000034,
+          1000035,
+          1000036,
+          1000037,
+          1000038,
+          1000039,
+          1000040,
+          1000041,
+          1000042,
+          1000043,
+          1000044,
+          1000045,
+          1000046,
+          1000047,
+          1000048,
+          1000049
+        ],
+        "tempo_ms": 1.1289,
+        "memoria_mb": 0.009568
+      },
+      "gap_percentual": null
+    },
+    {
+      "n": 100,
+      "brute_force": {
+        "status": "inviavel",
+        "motivo": "Crescimento combinatorio torna a enumeracao completa impraticavel para N > 12.",
+        "custo_total": null,
+        "arestas": [],
+        "chamadas_recursivas": null,
+        "solucoes_avaliadas": null,
+        "tempo_ms": null,
+        "memoria_mb": null
+      },
+      "greedy_prim": {
+        "custo_total": 216.319,
+        "arestas": [
+          [
+            1000000,
+            1000001,
+            0.648
+          ],
+          [
+            1000001,
+            1000002,
+            3.198
+          ],
+          [
+            1000002,
+            1000003,
+            0.636
+          ],
+          [
+            1000003,
+            1000004,
+            0.674
+          ],
+          [
+            1000004,
+            1000066,
+            1.834
+          ],
+          [
+            1000004,
+            1000005,
+            2.959
+          ],
+          [
+            1000005,
+            1000021,
+            1.419
+          ],
+          [
+            1000021,
+            1000020,
+            0.846
+          ],
+          [
+            1000020,
+            1000019,
+            2.569
+          ],
+          [
+            1000019,
+            1000099,
+            0.446
+          ],
+          [
+            1000099,
+            1000098,
+            1.629
+          ],
+          [
+            1000098,
+            1000056,
+            1.636
+          ],
+          [
+            1000056,
+            1000055,
+            0.568
+          ],
+          [
+            1000055,
+            1000054,
+            0.537
+          ],
+          [
+            1000098,
+            1000053,
+            2.774
+          ],
+          [
+            1000053,
+            1000052,
+            0.828
+          ],
+          [
+            1000052,
+            1000049,
+            2.336
+          ],
+          [
+            1000049,
+            1000036,
+            0.577
+          ],
+          [
+            1000052,
+            1000051,
+            2.635
+          ],
+          [
+            1000051,
+            1000050,
+            0.476
+          ],
+          [
+            1000051,
+            1000040,
+            2.303
+          ],
+          [
+            1000040,
+            1000041,
+            2.581
+          ],
+          [
+            1000036,
+            1000035,
+            2.708
+          ],
+          [
+            1000035,
+            1000034,
+            1.709
+          ],
+          [
+            1000034,
+            1000033,
+            0.946
+          ],
+          [
+            1000033,
+            1000032,
+            0.835
+          ],
+          [
+            1000056,
+            1000057,
+            2.825
+          ],
+          [
+            1000057,
+            1000058,
+            0.267
+          ],
+          [
+            1000019,
+            1000018,
+            2.858
+          ],
+          [
+            1000036,
+            1000037,
+            3.092
+          ],
+          [
+            1000066,
+            1000024,
+            3.101
+          ],
+          [
+            1000024,
+            1000031,
+            1.371
+          ],
+          [
+            1000031,
+            1000009,
+            1.867
+          ],
+          [
+            1000009,
+            1000008,
+            0.697
+          ],
+          [
+            1000008,
+            1000007,
+            1.694
+          ],
+          [
+            1000009,
+            1000010,
+            2.075
+          ],
+          [
+            1000010,
+            1000011,
+            0.238
+          ],
+          [
+            1000011,
+            1000012,
+            1.973
+          ],
+          [
+            1000012,
+            1000013,
+            2.037
+          ],
+          [
+            1000012,
+            1000047,
+            2.189
+          ],
+          [
+            1000047,
+            1000046,
+            1.809
+          ],
+          [
+            1000024,
+            1000025,
+            2.372
+          ],
+          [
+            1000031,
+            1000030,
+            2.437
+          ],
+          [
+            1000030,
+            1000029,
+            0.599
+          ],
+          [
+            1000029,
+            1000028,
+            1.22
+          ],
+          [
+            1000007,
+            1000006,
+            2.462
+          ],
+          [
+            1000006,
+            1000089,
+            1.716
+          ],
+          [
+            1000028,
+            1000027,
+            2.507
+          ],
+          [
+            1000027,
+            1000026,
+            2.33
+          ],
+          [
+            1000026,
+            1000071,
+            2.604
+          ],
+          [
+            1000071,
+            1000072,
+            1.857
+          ],
+          [
+            1000072,
+            1000073,
+            1.196
+          ],
+          [
+            1000073,
+            1000074,
+            2.081
+          ],
+          [
+            1000072,
+            1000076,
+            2.552
+          ],
+          [
+            1000076,
+            1000075,
+            1.621
+          ],
+          [
+            1000089,
+            1000090,
+            2.76
+          ],
+          [
+            1000090,
+            1000091,
+            0.84
+          ],
+          [
+            1000047,
+            1000048,
+            2.89
+          ],
+          [
+            1000048,
+            1000023,
+            0.536
+          ],
+          [
+            1000023,
+            1000022,
+            1.264
+          ],
+          [
+            1000048,
+            1000014,
+            2.939
+          ],
+          [
+            1000089,
+            1000088,
+            3.121
+          ],
+          [
+            1000088,
+            1000087,
+            1.693
+          ],
+          [
+            1000088,
+            1000038,
+            2.952
+          ],
+          [
+            1000038,
+            1000039,
+            0.571
+          ],
+          [
+            1000066,
+            1000067,
+            3.209
+          ],
+          [
+            1000072,
+            1000063,
+            3.217
+          ],
+          [
+            1000014,
+            1000015,
+            3.225
+          ],
+          [
+            1000015,
+            1000016,
+            2.934
+          ],
+          [
+            1000041,
+            1000042,
+            3.276
+          ],
+          [
+            1000063,
+            1000064,
+            3.278
+          ],
+          [
+            1000064,
+            1000065,
+            3.375
+          ],
+          [
+            1000099,
+            1000079,
+            3.386
+          ],
+          [
+            1000079,
+            1000078,
+            2.826
+          ],
+          [
+            1000076,
+            1000077,
+            3.451
+          ],
+          [
+            1000077,
+            1000085,
+            2.558
+          ],
+          [
+            1000085,
+            1000086,
+            1.489
+          ],
+          [
+            1000079,
+            1000080,
+            3.544
+          ],
+          [
+            1000080,
+            1000081,
+            3.594
+          ],
+          [
+            1000016,
+            1000017,
+            3.597
+          ],
+          [
+            1000058,
+            1000059,
+            3.598
+          ],
+          [
+            1000059,
+            1000060,
+            0.314
+          ],
+          [
+            1000060,
+            1000061,
+            1.838
+          ],
+          [
+            1000046,
+            1000045,
+            3.631
+          ],
+          [
+            1000045,
+            1000044,
+            2.75
+          ],
+          [
+            1000044,
+            1000043,
+            0.878
+          ],
+          [
+            1000081,
+            1000082,
+            3.731
+          ],
+          [
+            1000082,
+            1000083,
+            2.387
+          ],
+          [
+            1000071,
+            1000070,
+            3.739
+          ],
+          [
+            1000070,
+            1000069,
+            2.56
+          ],
+          [
+            1000061,
+            1000062,
+            3.8
+          ],
+          [
+            1000083,
+            1000084,
+            3.905
+          ],
+          [
+            1000098,
+            1000097,
+            4.041
+          ],
+          [
+            1000097,
+            1000096,
+            3.659
+          ],
+          [
+            1000096,
+            1000095,
+            0.811
+          ],
+          [
+            1000095,
+            1000094,
+            2.33
+          ],
+          [
+            1000094,
+            1000093,
+            3.224
+          ],
+          [
+            1000093,
+            1000092,
+            2.371
+          ],
+          [
+            1000069,
+            1000068,
+            4.273
+          ]
+        ],
+        "operacoes": 246,
+        "passos": [
+          "Escolhida aresta (1000000, 1000001) com peso 0.648, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000001, 1000002) com peso 3.198, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000002, 1000003) com peso 0.636, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000003, 1000004) com peso 0.674, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000004, 1000066) com peso 1.834, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000004, 1000005) com peso 2.959, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000005, 1000021) com peso 1.419, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000021, 1000020) com peso 0.846, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000020, 1000019) com peso 2.569, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000019, 1000099) com peso 0.446, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000099, 1000098) com peso 1.629, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000098, 1000056) com peso 1.636, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000056, 1000055) com peso 0.568, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000055, 1000054) com peso 0.537, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000098, 1000053) com peso 2.774, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000053, 1000052) com peso 0.828, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000052, 1000049) com peso 2.336, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000049, 1000036) com peso 0.577, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000052, 1000051) com peso 2.635, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000051, 1000050) com peso 0.476, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000051, 1000040) com peso 2.303, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000040, 1000041) com peso 2.581, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000036, 1000035) com peso 2.708, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000035, 1000034) com peso 1.709, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000034, 1000033) com peso 0.946, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000033, 1000032) com peso 0.835, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000056, 1000057) com peso 2.825, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000057, 1000058) com peso 0.267, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000019, 1000018) com peso 2.858, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000036, 1000037) com peso 3.092, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000066, 1000024) com peso 3.101, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000024, 1000031) com peso 1.371, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000031, 1000009) com peso 1.867, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000009, 1000008) com peso 0.697, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000008, 1000007) com peso 1.694, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000009, 1000010) com peso 2.075, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000010, 1000011) com peso 0.238, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000011, 1000012) com peso 1.973, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000012, 1000013) com peso 2.037, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000012, 1000047) com peso 2.189, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000047, 1000046) com peso 1.809, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000024, 1000025) com peso 2.372, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000031, 1000030) com peso 2.437, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000030, 1000029) com peso 0.599, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000029, 1000028) com peso 1.220, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000007, 1000006) com peso 2.462, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000006, 1000089) com peso 1.716, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000028, 1000027) com peso 2.507, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000027, 1000026) com peso 2.330, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000026, 1000071) com peso 2.604, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000071, 1000072) com peso 1.857, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000072, 1000073) com peso 1.196, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000073, 1000074) com peso 2.081, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000072, 1000076) com peso 2.552, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000076, 1000075) com peso 1.621, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000089, 1000090) com peso 2.760, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000090, 1000091) com peso 0.840, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000047, 1000048) com peso 2.890, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000048, 1000023) com peso 0.536, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000023, 1000022) com peso 1.264, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000048, 1000014) com peso 2.939, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000089, 1000088) com peso 3.121, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000088, 1000087) com peso 1.693, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000088, 1000038) com peso 2.952, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000038, 1000039) com peso 0.571, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000066, 1000067) com peso 3.209, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000072, 1000063) com peso 3.217, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000014, 1000015) com peso 3.225, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000015, 1000016) com peso 2.934, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000041, 1000042) com peso 3.276, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000063, 1000064) com peso 3.278, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000064, 1000065) com peso 3.375, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000099, 1000079) com peso 3.386, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000079, 1000078) com peso 2.826, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000076, 1000077) com peso 3.451, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000077, 1000085) com peso 2.558, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000085, 1000086) com peso 1.489, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000079, 1000080) com peso 3.544, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000080, 1000081) com peso 3.594, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000016, 1000017) com peso 3.597, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000058, 1000059) com peso 3.598, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000059, 1000060) com peso 0.314, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000060, 1000061) com peso 1.838, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000046, 1000045) com peso 3.631, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000045, 1000044) com peso 2.750, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000044, 1000043) com peso 0.878, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000081, 1000082) com peso 3.731, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000082, 1000083) com peso 2.387, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000071, 1000070) com peso 3.739, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000070, 1000069) com peso 2.560, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000061, 1000062) com peso 3.800, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000083, 1000084) com peso 3.905, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000098, 1000097) com peso 4.041, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000097, 1000096) com peso 3.659, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000096, 1000095) com peso 0.811, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000095, 1000094) com peso 2.330, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000094, 1000093) com peso 3.224, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000093, 1000092) com peso 2.371, menor custo disponivel na fronteira.",
+          "Escolhida aresta (1000069, 1000068) com peso 4.273, menor custo disponivel na fronteira."
+        ],
+        "vertices_visitados": [
+          1000000,
+          1000001,
+          1000002,
+          1000003,
+          1000004,
+          1000005,
+          1000006,
+          1000007,
+          1000008,
+          1000009,
+          1000010,
+          1000011,
+          1000012,
+          1000013,
+          1000014,
+          1000015,
+          1000016,
+          1000017,
+          1000018,
+          1000019,
+          1000020,
+          1000021,
+          1000022,
+          1000023,
+          1000024,
+          1000025,
+          1000026,
+          1000027,
+          1000028,
+          1000029,
+          1000030,
+          1000031,
+          1000032,
+          1000033,
+          1000034,
+          1000035,
+          1000036,
+          1000037,
+          1000038,
+          1000039,
+          1000040,
+          1000041,
+          1000042,
+          1000043,
+          1000044,
+          1000045,
+          1000046,
+          1000047,
+          1000048,
+          1000049,
+          1000050,
+          1000051,
+          1000052,
+          1000053,
+          1000054,
+          1000055,
+          1000056,
+          1000057,
+          1000058,
+          1000059,
+          1000060,
+          1000061,
+          1000062,
+          1000063,
+          1000064,
+          1000065,
+          1000066,
+          1000067,
+          1000068,
+          1000069,
+          1000070,
+          1000071,
+          1000072,
+          1000073,
+          1000074,
+          1000075,
+          1000076,
+          1000077,
+          1000078,
+          1000079,
+          1000080,
+          1000081,
+          1000082,
+          1000083,
+          1000084,
+          1000085,
+          1000086,
+          1000087,
+          1000088,
+          1000089,
+          1000090,
+          1000091,
+          1000092,
+          1000093,
+          1000094,
+          1000095,
+          1000096,
+          1000097,
+          1000098,
+          1000099
+        ],
+        "tempo_ms": 2.1699,
+        "memoria_mb": 0.022891
+      },
+      "gap_percentual": null
+    }
+  ]
+}
