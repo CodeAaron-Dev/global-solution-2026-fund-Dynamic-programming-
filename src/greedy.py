@@ -16,7 +16,14 @@ def prim_mst(grafo: Grafo, start_id: Optional[int] = None) -> Dict[str, object]:
     arvore atual a um vertice ainda nao visitado.
     """
     if not grafo:
-        return {'custo_total': 0.0, 'arestas': [], 'operacoes': 0, 'passos': []}
+        return {
+            'status': 'grafo_vazio',
+            'custo_total': 0.0,
+            'arestas': [],
+            'operacoes': 0,
+            'passos': [],
+            'vertices_visitados': [],
+        }
 
     if start_id is None:
         start_id = next(iter(grafo))
@@ -53,12 +60,21 @@ def prim_mst(grafo: Grafo, start_id: Optional[int] = None) -> Dict[str, object]:
                 operations += 1
 
     if len(visited) != len(grafo):
-        raise ValueError('Grafo desconectado: nao existe MST unica cobrindo todos os vertices')
+        return {
+            'status': 'grafo_desconectado',
+            'motivo': 'Grafo desconectado: nao existe MST cobrindo todos os vertices.',
+            'custo_total': None,
+            'arestas': mst_edges,
+            'operacoes': operations,
+            'passos': steps,
+            'vertices_visitados': sorted(visited),
+        }
 
     return {
+        'status': 'mst_encontrada',
         'custo_total': round(total_cost, 6),
         'arestas': mst_edges,
         'operacoes': operations,
         'passos': steps,
-        'vertices_visitados': list(visited),
+        'vertices_visitados': sorted(visited),
     }
