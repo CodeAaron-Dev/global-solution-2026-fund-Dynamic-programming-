@@ -123,6 +123,9 @@ class BinarySearchTree:
         """Remove um municipio pelo id.
 
         Retorna True quando removeu e False quando o id nao foi encontrado.
+        Como a BST e ordenada por (risco, id), e nao somente por id, localizar
+        um id isolado exige percorrer potencialmente os dois lados da arvore.
+        Por isso, esta etapa de busca por id tem custo O(n) no pior caso.
         """
         target = self._find_by_id(self.root, id_municipio)
         if target is None:
@@ -132,6 +135,8 @@ class BinarySearchTree:
         return True
 
     def _find_by_id(self, node: Optional[Node], id_municipio: int) -> Optional[Node]:
+        # A propriedade da BST usa a chave (risco, id). Sem conhecer o risco,
+        # nao ha como decidir apenas um ramo; portanto a busca por id e linear.
         if node is None:
             return None
         if node.municipio[0] == id_municipio:
@@ -219,7 +224,7 @@ def create_rs_scenario() -> Tuple[Dict[int, Municipio], Grafo]:
         4304606: (4304606, 'Canoas', 0.88, 1200.0, 348000),
         4318705: (4318705, 'Sao Leopoldo', 0.81, 980.0, 238000),
         4309209: (4309209, 'Gravatai', 0.74, 1100.0, 285000),
-        4323002: (4323002, 'Viamon', 0.69, 900.0, 256000),
+        4323002: (4323002, 'Viamão', 0.69, 900.0, 256000),
         4313409: (4313409, 'Novo Hamburgo', 0.77, 1050.0, 247000),
         4303103: (4303103, 'Cachoeirinha', 0.71, 860.0, 132000),
         4313375: (4313375, 'Nova Santa Rita', 0.84, 720.0, 30000),

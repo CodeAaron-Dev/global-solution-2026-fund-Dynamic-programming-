@@ -62,6 +62,8 @@ A BST foi implementada do zero com as classes `Node` e `BinarySearchTree`. Ela o
 - `height`
 - `remove`
 
+Observação: a remoção recebe `id_municipio`, mas a BST está ordenada por `(indice_risco, id_municipio)`. Portanto, quando só o id é conhecido, a localização inicial precisa percorrer potencialmente os dois ramos da árvore e tem custo `O(n)` no pior caso; depois de encontrada a chave completa, a remoção estrutural usa a propriedade da BST.
+
 ### Algoritmos
 
 | Algoritmo | Implementação | Papel no projeto |

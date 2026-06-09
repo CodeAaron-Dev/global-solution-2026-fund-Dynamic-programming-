@@ -45,3 +45,18 @@ def test_manual_graph_mst_cost():
     grafo = create_graph(vertices, [(1, 2, 1.0), (2, 3, 2.0), (3, 4, 1.0), (1, 4, 10.0), (1, 3, 4.0)])
     result = prim_mst(grafo, start_id=1)
     assert result['custo_total'] == 4.0
+
+
+def test_prim_disconnected_graph_returns_status_dict():
+    vertices = {
+        1: (1, 'A', 0.5, 100.0, 1000),
+        2: (2, 'B', 0.6, 100.0, 1000),
+        3: (3, 'C', 0.7, 100.0, 1000),
+    }
+    grafo = create_graph(vertices, [(1, 2, 1.0)])
+
+    result = prim_mst(grafo, start_id=1)
+
+    assert result['status'] == 'grafo_desconectado'
+    assert result['custo_total'] is None
+    assert result['vertices_visitados'] == [1, 2]
